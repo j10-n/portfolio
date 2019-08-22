@@ -4,7 +4,9 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
+import artbreak from '../assets/images/artbreak.gif';
+import welcomehome from '../assets/images/welcomehome.gif';
+
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import config from '../../config';
@@ -68,51 +70,39 @@ const IndexPage = () => (
     </section>
 
     <section id="two" className="wrapper alt style2">
+      <section className="spotlight-title">
+        <div className="content">
+          <h2>Recent Projects</h2>
+        </div>
+      </section>
+
+      {/* ARTBREAK */}
       <section className="spotlight">
         <div className="image">
-          <img src={pic1} alt="" />
+          <img src={artbreak} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
-          </h2>
+          <h2>ARTBREAK-HI</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            ARTBREAK is a platform for artists to share their work and get in
+            touch with potential commissioners. Powered by Stripe, sending and
+            paying invoices is simplified. Using Pusher Chatkit, users are able
+            to send messages and create private rooms in real time!
           </p>
         </div>
       </section>
+
+      {/* Welcome Home */}
       <section className="spotlight">
         <div className="image">
-          <img src={pic2} alt="" />
+          <img src={welcomehome} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
-          </h2>
+          <h2>Welcome Home</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic3} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Welcome Home is a game I created with a team for the 2019 Global
+            Game Jam Honolulu. Using technologies such as Unity, C#, and Blender
+            we were able to create a game that represents home to us.
           </p>
         </div>
       </section>
