@@ -16,7 +16,7 @@ const IndexPage = () => (
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
-        <ul className="actions special">
+        {/* <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
               <a href="/#" className="button primary">
@@ -24,30 +24,18 @@ const IndexPage = () => (
               </a>
             </Scroll>
           </li>
-        </ul>
+        </ul> */}
       </div>
       <Scroll type="id" element="one">
-        <a href="#one" className="more">
-          Learn More
-        </a>
+        <a href="#one" className="more"></a>
       </Scroll>
     </section>
 
-    <section id="one" className="wrapper style1 special">
+    <section id="one" className="wrapper style2 special">
       <div className="inner">
         <header className="major">
-          <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
+          <h2>About Me</h2>
+          <p></p>
         </header>
         <ul className="icons major">
           <li>
@@ -56,7 +44,7 @@ const IndexPage = () => (
             </span>
           </li>
           <li>
-            <span className="icon fa-heart major style2">
+            <span className="icon fa-gg-circle major style2">
               <span className="label">Ipsum</span>
             </span>
           </li>
@@ -71,9 +59,9 @@ const IndexPage = () => (
 
     <section id="two" className="wrapper alt style2">
       <section className="spotlight-title">
-        <div className="content">
+        {/* <div className="content">
           <h2>Recent Projects</h2>
-        </div>
+        </div> */}
       </section>
 
       {/* ARTBREAK */}
@@ -82,7 +70,16 @@ const IndexPage = () => (
           <img src={artbreak} alt="" />
         </div>
         <div className="content">
-          <h2>ARTBREAK-HI</h2>
+          <h2>
+            ARTBREAK-HI{' '}
+            <a
+              href="https://github.com/j10-n/artbreak-hawaii"
+              className="icon brands fa-github"
+            >
+              <span className="label">Github</span>
+            </a>
+          </h2>
+
           <p>
             ARTBREAK is a platform for artists to share their work and get in
             touch with potential commissioners. Powered by Stripe, sending and
@@ -98,7 +95,15 @@ const IndexPage = () => (
           <img src={welcomehome} alt="" />
         </div>
         <div className="content">
-          <h2>Welcome Home</h2>
+          <h2>
+            Welcome Home{' '}
+            <a
+              href="http://welcomehomebucket.s3-website-us-west-2.amazonaws.com/"
+              className="icon solid fa-external-link-alt"
+            >
+              <span className="label">External Link</span>
+            </a>
+          </h2>
           <p>
             Welcome Home is a game I created with a team for the 2019 Global
             Game Jam Honolulu. Using technologies such as Unity, C#, and Blender
@@ -108,7 +113,7 @@ const IndexPage = () => (
       </section>
     </section>
 
-    <section id="three" className="wrapper style3 special">
+    <section id="three" className="wrapper style2 special">
       <div className="inner">
         <header className="major">
           <h2>Accumsan mus tortor nunc aliquet</h2>
@@ -170,7 +175,7 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Let's Get In Touch!</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
             eleifend fringilla.
