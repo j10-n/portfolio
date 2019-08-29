@@ -6,6 +6,7 @@ import Scroll from '../components/Scroll';
 
 import artbreak from '../assets/images/artbreak.gif';
 import welcomehome from '../assets/images/welcomehome.gif';
+import avatar from '../assets/images/avatar.jpg';
 
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
@@ -35,21 +36,88 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>About Me</h2>
-          <p></p>
+          {/* <div>
+            {' '}
+          </div> */}
+          <div className="about">
+            <p>
+              <img className="image avatar" src={avatar} />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
+              magna tristique, posuere metus tincidunt, lacinia tellus. Quisque
+              blandit, quam quis mollis egestas, orci velit elementum dolor, nec
+              ornare dolor urna sed tellus. Nullam sapien dui, rhoncus id varius
+              id, pulvinar sit amet dui. Nunc eu eros sodales ipsum volutpat
+              facilisis ut ac eros. Suspendisse non congue urna. Nulla ligula
+              quam, iaculis non tincidunt in, semper eu tortor. Nullam
+              consectetur cursus nibh non faucibus. Quisque auctor justo sit
+              amet congue vestibulum. Nullam volutpat nisi in pellentesque
+              auctor. Nunc congue eros elit, in porta lacus feugiat nec. Nullam
+              sapien dui, rhoncus id varius id, pulvinar sit amet dui. Nunc eu
+              eros sodales ipsum volutpat facilisis ut ac eros. Suspendisse non
+              congue urna. Nulla ligula quam, iaculis non tincidunt in, semper
+              eu tortor. Nullam consectetur cursus nibh non faucibus. Quisque
+              auctor justo sit amet congue vestibulum. Nullam volutpat nisi in
+              pellentesque auctor. Nunc congue eros elit, in porta lacus feugiat
+              nec.
+            </p>
+          </div>
         </header>
         <ul className="icons major">
           <li>
-            <span className="icon fa-gem major style1">
+            <span className="icon brands fa-html5 major style1">
               <span className="label">Lorem</span>
             </span>
           </li>
           <li>
-            <span className="icon fa-gg-circle major style2">
+            <span className="icon brands fa-css3-alt major style2">
               <span className="label">Ipsum</span>
             </span>
           </li>
           <li>
-            <span className="icon solid fa-code major style3">
+            <span className="icon brands fa-react major style3">
+              <span className="label">Dolor</span>
+            </span>
+          </li>
+          <li>
+            <span className="icon brands fa-angular major style1">
+              <span className="label">Dolor</span>
+            </span>
+          </li>
+          <li>
+            <span className="icon brands fa-aws major style2">
+              <span className="label">Dolor</span>
+            </span>
+          </li>
+          <br />
+          <br />
+          <br />
+          <li>
+            <span className="icon brands fa-github major style3">
+              <span className="label">Dolor</span>
+            </span>
+          </li>
+          <li>
+            <span className="icon brands fa-git major style3">
+              <span className="label">Dolor</span>
+            </span>
+          </li>
+          <li>
+            <span className="icon brands fa-js major style1">
+              <span className="label">Dolor</span>
+            </span>
+          </li>
+          <li>
+            <span className="icon brands fa-node major style2">
+              <span className="label">Dolor</span>
+            </span>
+          </li>
+          <li>
+            <span className="icon brands fa-npm major style3">
+              <span className="label">Dolor</span>
+            </span>
+          </li>
+          <li>
+            <span className="icon brands fa-sass major style3">
               <span className="label">Dolor</span>
             </span>
           </li>
@@ -57,66 +125,10 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="two" className="wrapper alt style2">
-      <section className="spotlight-title">
-        {/* <div className="content">
-          <h2>Recent Projects</h2>
-        </div> */}
-      </section>
-
-      {/* ARTBREAK */}
-      <section className="spotlight">
-        <div className="image">
-          <img src={artbreak} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            ARTBREAK-HI{' '}
-            <a
-              href="https://github.com/j10-n/artbreak-hawaii"
-              className="icon brands fa-github"
-            >
-              <span className="label">Github</span>
-            </a>
-          </h2>
-
-          <p>
-            ARTBREAK is a platform for artists to share their work and get in
-            touch with potential commissioners. Powered by Stripe, sending and
-            paying invoices is simplified. Using Pusher Chatkit, users are able
-            to send messages and create private rooms in real time!
-          </p>
-        </div>
-      </section>
-
-      {/* Welcome Home */}
-      <section className="spotlight">
-        <div className="image">
-          <img src={welcomehome} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Welcome Home{' '}
-            <a
-              href="http://welcomehomebucket.s3-website-us-west-2.amazonaws.com/"
-              className="icon solid fa-external-link-alt"
-            >
-              <span className="label">External Link</span>
-            </a>
-          </h2>
-          <p>
-            Welcome Home is a game I created with a team for the 2019 Global
-            Game Jam Honolulu. Using technologies such as Unity, C#, and Blender
-            we were able to create a game that represents home to us.
-          </p>
-        </div>
-      </section>
-    </section>
-
-    <section id="three" className="wrapper style2 special">
+    {/* <section id="two" className="wrapper style2 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>List Section</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
             eleifend
@@ -170,6 +182,62 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
+    </section> */}
+
+    <section id="three" className="wrapper alt style2">
+      <section className="spotlight-title">
+        {/* <div className="content">
+          <h2>Recent Projects</h2>
+        </div> */}
+      </section>
+
+      {/* ARTBREAK */}
+      <section className="spotlight">
+        <div className="image">
+          <img src={artbreak} alt="" />
+        </div>
+        <div className="content">
+          <h2>
+            ARTBREAK-HI{' '}
+            <a
+              href="https://github.com/j10-n/artbreak-hawaii"
+              className="icon brands fa-github"
+            >
+              <span className="label">Github</span>
+            </a>
+          </h2>
+
+          <p>
+            ARTBREAK is a platform for artists to share their work and get in
+            touch with potential commissioners. Powered by Stripe, sending and
+            paying invoices is simplified. Using Pusher Chatkit, users are able
+            to send messages and create private rooms in real time!
+          </p>
+        </div>
+      </section>
+
+      {/* Welcome Home */}
+      <section className="spotlight">
+        <div className="image">
+          <img src={welcomehome} alt="" />
+        </div>
+        <div className="content">
+          <h2>
+            Welcome Home{' '}
+            <a
+              href="http://welcomehomebucket.s3-website-us-west-2.amazonaws.com/"
+              className="icon solid fa-external-link-alt"
+            >
+              <span className="label">External Link</span>
+            </a>
+          </h2>
+          <p>
+            Welcome Home is a game I created with a team for the 2019 Global
+            Game Jam Honolulu. Using technologies such as Unity, C#, and Blender
+            we were able to create a game that represents home to us.
+          </p>
+        </div>
+      </section>
     </section>
 
     <section id="cta" className="wrapper style4">

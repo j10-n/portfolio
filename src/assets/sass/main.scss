@@ -801,15 +801,15 @@
 
 		li {
 			display: inline-block;
-			padding: 0 1em 0 0;
+			padding: 1 1em 0 0;
 
 			&:last-child {
-				padding-right: 0 !important;
+				padding-right: 1 !important;
 			}
 		}
 
 		&.major {
-			padding: 1em 0;
+			padding: 1em;
 
 			li {
 				padding-right: 3.5em;
@@ -1212,6 +1212,7 @@
 					}
 				}
 			}
+			
 
 			::-webkit-input-placeholder {
 				color: _palette($p, fg-light) !important;
@@ -1931,3 +1932,13 @@
 			}
 		}
 	}
+	.image.avatar {
+	border-radius: 50%;
+	margin: 20px;	
+	float: left;
+    width: 7em;
+  }
+  .about{
+	  display: flex;
+	  flex:1;
+  }
