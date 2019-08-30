@@ -8,8 +8,6 @@ import artbreak from '../assets/images/artbreak.gif';
 import welcomehome from '../assets/images/welcomehome.gif';
 import avatar from '../assets/images/avatar.jpg';
 
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
@@ -40,7 +38,7 @@ const IndexPage = () => (
             {' '}
           </div> */}
           <div className="about">
-            <p>
+            <p style={{ textAlign: 'center' }}>
               <img className="image avatar" src={avatar} />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
               magna tristique, posuere metus tincidunt, lacinia tellus. Quisque
@@ -79,20 +77,18 @@ const IndexPage = () => (
             </span>
           </li>
           <li>
-            <span className="icon brands fa-angular major style1">
+            <span className="icon brands fa-angular major style2">
               <span className="label">Dolor</span>
             </span>
           </li>
           <li>
-            <span className="icon brands fa-aws major style2">
+            <span className="icon brands fa-aws major style3">
               <span className="label">Dolor</span>
             </span>
           </li>
           <br />
-          <br />
-          <br />
           <li>
-            <span className="icon brands fa-github major style3">
+            <span className="icon brands fa-github major style2">
               <span className="label">Dolor</span>
             </span>
           </li>
@@ -117,7 +113,7 @@ const IndexPage = () => (
             </span>
           </li>
           <li>
-            <span className="icon brands fa-sass major style3">
+            <span className="icon brands fa-sass major style1">
               <span className="label">Dolor</span>
             </span>
           </li>
@@ -183,14 +179,12 @@ const IndexPage = () => (
         </ul>
       </div>
     </section> */}
-
+    <section id="two" className="wrapper alt style" style={{ margin: '30px' }}>
+      <div className="content">
+        <h2 style={{ color: 'white', textAlign: 'left' }}>Recent Projects</h2>
+      </div>
+    </section>
     <section id="three" className="wrapper alt style2">
-      <section className="spotlight-title">
-        {/* <div className="content">
-          <h2>Recent Projects</h2>
-        </div> */}
-      </section>
-
       {/* ARTBREAK */}
       <section className="spotlight">
         <div className="image">
@@ -234,7 +228,8 @@ const IndexPage = () => (
           <p>
             Welcome Home is a game I created with a team for the 2019 Global
             Game Jam Honolulu. Using technologies such as Unity, C#, and Blender
-            we were able to create a game that represents home to us.
+            we were able to create a game that represents home to us. We
+            deployed this project to our AWS bucket so that everyone can play!
           </p>
         </div>
       </section>
@@ -245,22 +240,37 @@ const IndexPage = () => (
         <header>
           <h2>Let's Get In Touch!</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            If you have want to start a project, have questions, or just want to
+            chat, message me here!
           </p>
         </header>
-        <ul className="actions stacked">
-          <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
-          </li>
-        </ul>
+        <form>
+          <div class="fields">
+            <div class="field half">
+              <input type="text" name="name" id="name" placeholder="Name" />
+            </div>
+            <div class="field half">
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <div class="field">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                rows="7"
+              />
+            </div>
+          </div>
+          <ul class="actions">
+            <li>
+              <input
+                type="submit"
+                value="Send Message"
+                class="button primary"
+              />
+            </li>
+          </ul>
+        </form>
       </div>
     </section>
   </Layout>

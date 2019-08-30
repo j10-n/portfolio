@@ -3,7 +3,7 @@ import config from '../../config';
 export default function Footer() {
   return (
     <footer id="footer">
-      <ul className="icons">
+      <ul className="icons" style={{ marginBottom: '1em' }}>
         {config.socialLinks.map(social => {
           const { style, icon, name, url } = social;
           return (

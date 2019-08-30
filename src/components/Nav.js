@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 export default function Nav({ onMenuToggle = () => {} }) {
   return (
     <nav id="nav">
-      <ul>
+      {/* <ul>
         <li className="special">
           <a
             href="#menu"
@@ -21,12 +21,6 @@ export default function Nav({ onMenuToggle = () => {} }) {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
-                <Link to="/Generic">Generic Page</Link>
-              </li>
-              <li>
-                <Link to="/Elements">Elements</Link>
-              </li>
             </ul>
             <a
               className="close"
@@ -40,7 +34,7 @@ export default function Nav({ onMenuToggle = () => {} }) {
             </a>
           </div>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 }

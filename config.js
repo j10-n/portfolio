@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Spectral', // <title>
+  siteTitle: 'Justen Nakamoto | Portfolio', // <title>
   manifestName: 'Justen Nakamoto',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
@@ -20,12 +20,6 @@ module.exports = {
     },
     {
       style: 'brands',
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      style: 'brands',
       icon: 'fa-linkedin',
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/justen-nakamoto-046154186/',
@@ -34,6 +28,12 @@ module.exports = {
       style: 'solid',
       icon: 'fa-envelope',
       name: 'Email',
+      url: 'mailto:justenkn@hawaii.edu',
+    },
+    {
+      style: 'solid',
+      icon: 'fa-file-alt',
+      name: 'Resume',
       url: 'mailto:justenkn@hawaii.edu',
     },
   ],
