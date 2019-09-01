@@ -673,7 +673,7 @@
 		padding-left: 1em;
 
 		li {
-			padding-left: 0.5em;
+			padding-left: 1em;
 		}
 
 		&.alt {
@@ -804,15 +804,16 @@
 			padding: 1 1em 0 0;
 
 			&:last-child {
-				padding-right: 1 !important;
+				padding-right: 1em !important;
 			}
 		}
 
 		&.major {
-			padding: 1em;
+				padding: 0 1em !important;
 
 			li {
-				padding-right: 3.5em;
+				padding: 0 1.5em !important;
+
 
 				@include breakpoint('<=small') {
 					padding: 0 1em !important;
@@ -954,16 +955,16 @@
 		}
 
 		&.primary {
-			background-color: _palette(accent6, bg);
+			background-color: _palette(accent1, bg);
 			box-shadow: none !important;
-			color: _palette(accent6, fg-bold) !important;
+			color: _palette(accent1, fg-bold) !important;
 
 			&:hover {
-				background-color: lighten(_palette(accent6, bg), 5) !important;
+				background-color: lighten(_palette(accent1, bg), 5) !important;
 			}
 
 			&:active {
-				background-color: darken(_palette(accent6, bg), 5) !important;
+				background-color: darken(_palette(accent1, bg), 5) !important;
 			}
 		}
 
@@ -1287,7 +1288,6 @@
 					}
 				}
 			}
-
 		// Button
 
 			input[type="submit"],
@@ -1937,8 +1937,4 @@
 	margin: 20px;	
 	float: left;
     width: 7em;
-  }
-  .about{
-	  display: flex;
-	  flex:1;
   }

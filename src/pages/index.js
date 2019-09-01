@@ -236,41 +236,56 @@ const IndexPage = () => (
     </section>
 
     <section id="cta" className="wrapper style4">
-      <div className="inner">
+      <div
+        className="inner"
+        style={{
+          display: 'inline-block',
+          width: '70%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}
+      >
         <header>
           <h2>Let's Get In Touch!</h2>
           <p>
-            If you have want to start a project, have questions, or just want to
-            chat, message me here!
+            If you have want to start a project, have any questions, or just
+            want to chat, message me here!
           </p>
+          <form>
+            <div class="fields" style={{ float: 'center' }}>
+              <div class="field half">
+                <input type="text" name="name" id="name" placeholder="Name" />
+              </div>
+              <div class="field half">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="field">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  rows="7"
+                />
+              </div>
+
+              <ul class="actions">
+                <li>
+                  <input
+                    style={{ marginTop: '15px' }}
+                    type="submit"
+                    value="Send Message"
+                    class="button primary"
+                  />
+                </li>
+              </ul>
+            </div>
+          </form>
         </header>
-        <form>
-          <div class="fields">
-            <div class="field half">
-              <input type="text" name="name" id="name" placeholder="Name" />
-            </div>
-            <div class="field half">
-              <input type="email" name="email" id="email" placeholder="Email" />
-            </div>
-            <div class="field">
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Message"
-                rows="7"
-              />
-            </div>
-          </div>
-          <ul class="actions">
-            <li>
-              <input
-                type="submit"
-                value="Send Message"
-                class="button primary"
-              />
-            </li>
-          </ul>
-        </form>
       </div>
     </section>
   </Layout>
