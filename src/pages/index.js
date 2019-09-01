@@ -239,10 +239,7 @@ const IndexPage = () => (
       <div
         className="inner"
         style={{
-          display: 'inline-block',
           width: '70%',
-          marginLeft: 'auto',
-          marginRight: 'auto',
         }}
       >
         <header>
