@@ -108,12 +108,12 @@ const IndexPage = () => (
             </span>
           </li>
           <li>
-            <span className="icon brands fa-npm major style3">
+            <span className="icon brands fa-docker major style3">
               <span className="label">Dolor</span>
             </span>
           </li>
           <li>
-            <span className="icon brands fa-sass major style1">
+            <span className="icon brands fa-bootstrap major style1">
               <span className="label">Dolor</span>
             </span>
           </li>
@@ -236,12 +236,7 @@ const IndexPage = () => (
     </section>
 
     <section id="cta" className="wrapper style4">
-      <div
-        className="inner"
-        style={{
-          width: '70%',
-        }}
-      >
+      <div className="inner">
         <header>
           <h2>Let's Get In Touch!</h2>
           <p>
@@ -273,7 +268,7 @@ const IndexPage = () => (
               <ul class="actions">
                 <li>
                   <input
-                    style={{ marginTop: '15px' }}
+                    style={{ marginTop: '20px' }}
                     type="submit"
                     value="Send Message"
                     class="button primary"
