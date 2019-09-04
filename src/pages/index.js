@@ -240,8 +240,9 @@ const IndexPage = () => (
         <header>
           <h2>Let's Get In Touch!</h2>
           <p>
-            If you have want to start a project, have any questions, or just
-            want to chat, message me here!
+            Interested in working together? If you have any questions or just
+            want to chat, please feel free to send me a message using the form
+            below!
           </p>
           <form method="POST" data-netlify="true ">
             <div class="fields" style={{ float: 'center' }}>
