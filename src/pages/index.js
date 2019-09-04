@@ -38,87 +38,86 @@ const IndexPage = () => (
             {' '}
           </div> */}
           <div className="about">
-            <p style={{ textAlign: 'center' }}>
+            <p className="textanimation" style={{ textAlign: 'center' }}>
               <img className="image avatar" src={avatar} />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
-              magna tristique, posuere metus tincidunt, lacinia tellus. Quisque
-              blandit, quam quis mollis egestas, orci velit elementum dolor, nec
-              ornare dolor urna sed tellus. Nullam sapien dui, rhoncus id varius
-              id, pulvinar sit amet dui. Nunc eu eros sodales ipsum volutpat
-              facilisis ut ac eros. Suspendisse non congue urna. Nulla ligula
-              quam, iaculis non tincidunt in, semper eu tortor. Nullam
-              consectetur cursus nibh non faucibus. Quisque auctor justo sit
-              amet congue vestibulum. Nullam volutpat nisi in pellentesque
-              auctor. Nunc congue eros elit, in porta lacus feugiat nec. Nullam
-              sapien dui, rhoncus id varius id, pulvinar sit amet dui. Nunc eu
-              eros sodales ipsum volutpat facilisis ut ac eros. Suspendisse non
-              congue urna. Nulla ligula quam, iaculis non tincidunt in, semper
-              eu tortor. Nullam consectetur cursus nibh non faucibus. Quisque
-              auctor justo sit amet congue vestibulum. Nullam volutpat nisi in
-              pellentesque auctor. Nunc congue eros elit, in porta lacus feugiat
-              nec.
+              Hey my name is Justen Nakamoto, and I am a Full Stack Web
+              Developer. I pursued my Bachelor's Degree in Information
+              Technology at the University of Hawaiʻi – West Oʻahu. After
+              graudating, I enrolled in DevLeague, Hawaii's only JavaScript Web
+              Engineering Bootcamp. During my time at DevLeague, I was able to
+              completely immerse myself in software development training. After
+              completing 800+ hours, I developed invaluable hands-on experience
+              with front-end and back-end web technologies. These include
+              working with HTML5, CSS3, JavaScript, Node.js, Docker, React,
+              Angular, AWS, PostgreSQL, Git, and more. Day to day, I am
+              motivated to constantly improving myself and am working on
+              becoming a stronger developer. At the moment, I am brushing up on
+              Angular, studying UI/UX concepts, and tinkering with Unity game
+              design.
             </p>
           </div>
         </header>
+        <br />
         <ul className="icons major">
           <li>
             <span className="icon brands fa-html5 major style1">
-              <span className="label">Lorem</span>
+              <span className="label">HTML5</span>
             </span>
           </li>
           <li>
             <span className="icon brands fa-css3-alt major style2">
-              <span className="label">Ipsum</span>
+              <span className="label">CSS3</span>
             </span>
           </li>
           <li>
             <span className="icon brands fa-react major style3">
-              <span className="label">Dolor</span>
+              <span className="label">React</span>
             </span>
           </li>
           <li>
             <span className="icon brands fa-angular major style2">
-              <span className="label">Dolor</span>
+              <span className="label">Angular</span>
             </span>
           </li>
           <li>
             <span className="icon brands fa-aws major style3">
-              <span className="label">Dolor</span>
+              <span className="label">AWS</span>
             </span>
           </li>
           <br />
           <li>
             <span className="icon brands fa-github major style2">
-              <span className="label">Dolor</span>
+              <span className="label">GitHub</span>
             </span>
           </li>
           <li>
             <span className="icon brands fa-git major style3">
-              <span className="label">Dolor</span>
+              <span className="label">Git</span>
             </span>
           </li>
           <li>
             <span className="icon brands fa-js major style1">
-              <span className="label">Dolor</span>
+              <span className="label">JS</span>
             </span>
           </li>
           <li>
             <span className="icon brands fa-node major style2">
-              <span className="label">Dolor</span>
+              <span className="label">Node.js</span>
             </span>
           </li>
           <li>
             <span className="icon brands fa-docker major style3">
-              <span className="label">Dolor</span>
+              <span className="label">Docker</span>
             </span>
           </li>
           <li>
             <span className="icon brands fa-bootstrap major style1">
-              <span className="label">Dolor</span>
+              <span className="label">Bootstrap</span>
             </span>
           </li>
         </ul>
       </div>
+      <br />
     </section>
 
     {/* <section id="two" className="wrapper style2 special">
@@ -226,10 +225,11 @@ const IndexPage = () => (
             </a>
           </h2>
           <p>
-            Welcome Home is a game I created with a team for the 2019 Global
-            Game Jam Honolulu. Using technologies such as Unity, C#, and Blender
-            we were able to create a game that represents home to us. We
-            deployed this project to our AWS bucket so that everyone can play!
+            Welcome Home is a game I created with a team of 4 for the 2019
+            Global Game Jam Honolulu. Using software technologies such as Unity,
+            C#, and Blender we were able to create a game that represents home
+            to us. We deployed this project to our AWS bucket so that everyone
+            can play!
           </p>
         </div>
       </section>
@@ -243,7 +243,7 @@ const IndexPage = () => (
             If you have want to start a project, have any questions, or just
             want to chat, message me here!
           </p>
-          <form>
+          <form method="POST" data-netlify="true ">
             <div class="fields" style={{ float: 'center' }}>
               <div class="field half">
                 <input type="text" name="name" id="name" placeholder="Name" />
@@ -264,7 +264,9 @@ const IndexPage = () => (
                   rows="7"
                 />
               </div>
-
+              <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
               <ul class="actions">
                 <li>
                   <input

@@ -34,7 +34,8 @@ module.exports = {
       style: 'solid',
       icon: 'fa-file-alt',
       name: 'Resume',
-      url: 'mailto:justenkn@hawaii.edu',
+      url:
+        'https://drive.google.com/file/d/1FZdbF9gmT0GrQRBq_nNx3NeDG-e22Mfd/view',
     },
   ],
 };
