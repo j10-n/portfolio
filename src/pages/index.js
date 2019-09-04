@@ -40,16 +40,16 @@ const IndexPage = () => (
           <div className="about">
             <p className="textanimation" style={{ textAlign: 'center' }}>
               <img className="image avatar" src={avatar} />
-              Hey my name is Justen Nakamoto, and I am a Full Stack Web
-              Developer. I pursued my Bachelor's Degree in Information
-              Technology at the University of Hawaiʻi – West Oʻahu. After
-              graudating, I enrolled in DevLeague, Hawaii's only JavaScript Web
-              Engineering Bootcamp. During my time at DevLeague, I was able to
-              completely immerse myself in software development training. After
-              completing 800+ hours, I developed invaluable hands-on experience
-              with front-end and back-end web technologies. These include
-              working with HTML5, CSS3, JavaScript, Node.js, Docker, React,
-              Angular, AWS, PostgreSQL, Git, and more. Day to day, I am
+              Hey my name is Justen Nakamoto, and I am a Full Stack Developer. I
+              pursued my Bachelor's Degree in Information Technology at the
+              University of Hawaiʻi – West Oʻahu. After graudating, I enrolled
+              in DevLeague, Hawaii's only JavaScript Web Engineering Bootcamp.
+              During my time at DevLeague, I was able to completely immerse
+              myself in software development training. After completing 800+
+              hours, I developed invaluable hands-on experience with front-end
+              and back-end web technologies. These include working with HTML5,
+              CSS3, JavaScript, Node.js, Docker, React, Angular, Amazon Web
+              Services (AWS), PostgreSQL, Git, and more. Day to day, I am
               motivated to constantly improving myself and am working on
               becoming a stronger developer. At the moment, I am brushing up on
               Angular, studying UI/UX concepts, and tinkering with Unity game
