@@ -35,7 +35,7 @@ module.exports = {
       icon: 'fa-file-alt',
       name: 'Resume',
       url:
-        'https://drive.google.com/file/d/1FZdbF9gmT0GrQRBq_nNx3NeDG-e22Mfd/view',
+        'https://drive.google.com/file/d/1FZdbF9gmT0GrQRBq_nNx3NeDG-e22Mfd/view?usp=sharing',
     },
   ],
 };
