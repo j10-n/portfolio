@@ -244,7 +244,7 @@ const IndexPage = () => (
             want to chat, please feel free to send me a message using the form
             below!
           </p>
-          <form method="POST" data-netlify="true ">
+          <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div className="fields" style={{ float: 'center' }}>
               <div className="field half">
                 <input type="text" name="name" id="name" placeholder="Name" />
