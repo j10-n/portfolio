@@ -188,7 +188,7 @@ const IndexPage = () => (
       {/* ARTBREAK */}
       <section className="spotlight">
         <div className="image">
-          <img src={artbreak} alt="artbreak" />
+          {/* <img src={artbreak} alt="artbreak" /> */}
         </div>
         <div className="content">
           <h2>
@@ -213,7 +213,7 @@ const IndexPage = () => (
       {/* Welcome Home */}
       <section className="spotlight">
         <div className="image">
-          <img src={welcomehome} alt="welcomehome" />
+          {/* <img src={welcomehome} alt="welcomehome" /> */}
         </div>
         <div className="content">
           <h2>
