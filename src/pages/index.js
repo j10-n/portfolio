@@ -246,7 +246,7 @@ const IndexPage = () => (
             below!
           </p>
           <form
-            name="contact"
+            name="Contact"
             method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
