@@ -10,7 +10,6 @@ import avatar from '../assets/images/avatar.jpg';
 
 import config from '../../config';
 
-import Contact from '../pages/contact.html';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -41,7 +40,7 @@ const IndexPage = () => (
           </div> */}
           <div className="about">
             <p className="textanimation" style={{ textAlign: 'center' }}>
-              <img className="image avatar" src={avatar} />
+              <img className="image avatar" alt="me" src={avatar} />
               Hey my name is Justen Nakamoto, and I am a Full Stack Developer. I
               pursued my Bachelor's Degree in Information Technology at the
               University of Hawaiʻi – West Oʻahu. After graudating, I enrolled
@@ -189,7 +188,7 @@ const IndexPage = () => (
       {/* ARTBREAK */}
       <section className="spotlight">
         <div className="image">
-          <img src={artbreak} alt="" />
+          <img src={artbreak} alt="artbreak" />
         </div>
         <div className="content">
           <h2>
@@ -214,7 +213,7 @@ const IndexPage = () => (
       {/* Welcome Home */}
       <section className="spotlight">
         <div className="image">
-          <img src={welcomehome} alt="" />
+          <img src={welcomehome} alt="welcomehome" />
         </div>
         <div className="content">
           <h2>
@@ -240,7 +239,52 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <Contact></Contact>
+          <h2>Let's Get In Touch!</h2>
+          <p>
+            Interested in working together? If you have any questions or just
+            want to chat, please feel free to send me a message using the form
+            below!
+          </p>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+            <div className="fields" style={{ float: 'center' }}>
+              <div className="field half">
+                <input type="text" name="name" id="name" placeholder="Name" />
+              </div>
+              <div className="field half">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div className="field">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  rows="7"
+                />
+              </div>
+              <ul className="actions">
+                <li>
+                  <input
+                    style={{ marginTop: '20px' }}
+                    type="submit"
+                    value="Send Message"
+                    className="button primary"
+                  />
+                </li>
+              </ul>
+            </div>
+          </form>
         </header>
       </div>
     </section>
