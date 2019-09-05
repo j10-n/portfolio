@@ -9,6 +9,8 @@ import welcomehome from '../assets/images/welcomehome.gif';
 import avatar from '../assets/images/avatar.jpg';
 
 import config from '../../config';
+
+import Contact from '../pages/contact.html';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -238,48 +240,7 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Let's Get In Touch!</h2>
-          <p>
-            Interested in working together? If you have any questions or just
-            want to chat, please feel free to send me a message using the form
-            below!
-          </p>
-          <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <div className="fields" style={{ float: 'center' }}>
-              <div className="field half">
-                <input type="text" name="name" id="name" placeholder="Name" />
-              </div>
-              <div className="field half">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
-              <div className="field">
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="Message"
-                  rows="7"
-                />
-              </div>
-              <div className="field">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
-              <ul className="actions">
-                <li>
-                  <input
-                    style={{ marginTop: '20px' }}
-                    type="submit"
-                    value="Send Message"
-                    className="button primary"
-                  />
-                </li>
-              </ul>
-            </div>
-          </form>
+          <Contact></Contact>
         </header>
       </div>
     </section>

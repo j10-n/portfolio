@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>Let's Get In Touch!</h2>
+    <p>
+        Interested in working together? If you have any questions or just
+        want to chat, please feel free to send me a message using the form
+        below!
+    </p>
+    <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <div className="fields" style= "float: center">
+            <div className="field half">
+                <input type="text" name="name" id="name" placeholder="Name" />
+            </div>
+            <div className="field half">
+                <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <div className="field">
+                <textarea name="message" id="message" placeholder="Message" rows="7" />
+                </div>
+                  <div className="field">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                  <ul className="actions"> 
+                    <li>
+                      <input
+                        style= "margin-top: 20px"
+                        type="submit"
+                        value="Send Message"
+                        className="button primary"
+                      />
+                    </li>
+                  </ul>
+                  </div>
+    </form>
+</body>
+</html>
