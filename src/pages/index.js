@@ -5,7 +5,10 @@ import Layout from '../components/Layout';
 import Scroll from '../components/Scroll';
 
 import artbreak from '../assets/images/artbreak.gif';
+import artbreakvid from '../assets/images/artbreak.mp4';
 import welcomehome from '../assets/images/welcomehome.gif';
+import welcomehomevid from '../assets/images/welcomehome.mp4';
+
 import avatar from '../assets/images/avatar.jpg';
 
 import config from '../../config';
@@ -187,9 +190,10 @@ const IndexPage = () => (
     <section id="three" className="wrapper alt style2">
       {/* ARTBREAK */}
       <section className="spotlight">
-        <div className="image">
-          <img src={artbreak} alt="artbreak" />
-        </div>
+        <video className="image" loop muted autoPlay>
+          <source src={artbreakvid} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="content">
           <h2>
             ARTBREAK-HI{' '}
@@ -212,9 +216,10 @@ const IndexPage = () => (
 
       {/* Welcome Home */}
       <section className="spotlight">
-        <div className="image">
-          <img src={welcomehome} alt="welcomehome" />
-        </div>
+        <video className="image" loop muted autoPlay>
+          <source src={welcomehomevid} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="content">
           <h2>
             Welcome Home{' '}
