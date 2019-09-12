@@ -6,8 +6,10 @@ import Scroll from '../components/Scroll';
 
 import artbreak from '../assets/images/artbreak.gif';
 import artbreakvid from '../assets/images/artbreak.mp4';
+import artbreakimg from '../assets/images/artbreakimg.png';
 import welcomehome from '../assets/images/welcomehome.gif';
 import welcomehomevid from '../assets/images/welcomehome.mp4';
+import welcomehomeimg from '../assets/images/welcomehomeimg.png';
 
 import avatar from '../assets/images/avatar.jpg';
 
@@ -44,9 +46,9 @@ const IndexPage = () => (
           <div className="about">
             <p className="textanimation" style={{ textAlign: 'center' }}>
               <img className="image avatar" alt="me" src={avatar} />
-              Hey my name is Justen Nakamoto, and I am a Full Stack Developer. I
-              pursued my Bachelor's Degree in Information Technology at the
-              University of Hawaiʻi – West Oʻahu. After graudating, I enrolled
+              Hi my name is Justen Nakamoto, and I am a Full Stack Developer. I
+              graduated with my Bachelor's Degree in Information Technology at
+              the University of Hawaiʻi – West Oʻahu. After college, I enrolled
               in DevLeague, Hawaii's only JavaScript Web Engineering Bootcamp.
               During my time at DevLeague, I was able to completely immerse
               myself in software development training. After completing 800+
@@ -190,8 +192,8 @@ const IndexPage = () => (
     <section id="three" className="wrapper alt style2">
       {/* ARTBREAK */}
       <section className="spotlight">
-        <video className="image" loop muted autoPlay>
-          <source src={artbreakvid} type="video/mp4" />
+        <video className="image" playsInLine loop muted autoPlay>
+          <source src={artbreakvid} type="video/mp4" poster={artbreakimg} />
           Your browser does not support the video tag.
         </video>
         <div className="content">
@@ -216,8 +218,12 @@ const IndexPage = () => (
 
       {/* Welcome Home */}
       <section className="spotlight">
-        <video className="image" loop muted autoPlay>
-          <source src={welcomehomevid} type="video/mp4" />
+        <video className="image" playsInLine loop muted autoPlay>
+          <source
+            src={welcomehomevid}
+            type="video/mp4"
+            poster={welcomehomeimg}
+          />
           Your browser does not support the video tag.
         </video>
         <div className="content">
