@@ -192,13 +192,15 @@ const IndexPage = () => (
     <section id="three" className="wrapper alt style2">
       {/* ARTBREAK */}
       <section className="spotlight">
-        <video className="image" loop muted autoPlay>
-          <source
-            src={artbreakvid}
-            type="video/mp4"
-            playsInLine
-            poster={artbreakimg}
-          />
+        <video
+          className="image"
+          playsInLine
+          loop
+          muted
+          autoPlay
+          poster={artbreakimg}
+        >
+          <source src={artbreakvid} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="content">
@@ -225,8 +227,6 @@ const IndexPage = () => (
       <section className="spotlight">
         <video
           className="image"
-          controls="false"
-          preload="auto"
           playsInLine
           loop
           muted
@@ -247,11 +247,11 @@ const IndexPage = () => (
             </a>
           </h2>
           <p>
-            Welcome Home is a game I created with a team of 4 for the 2019
-            Global Game Jam Honolulu. Using software technologies such as Unity,
-            C#, and Blender we were able to create a game that represents home
-            to us. We deployed this project to our AWS bucket so that everyone
-            can play!
+            Welcome Home is a game I created with a team for the 2019 Global
+            Game Jam Honolulu. Using software technologies such as Unity, C#,
+            and Blender we were able to create a game that represents home to
+            us. We deployed this project to our AWS bucket so that everyone can
+            play!
           </p>
         </div>
       </section>
