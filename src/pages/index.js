@@ -192,8 +192,13 @@ const IndexPage = () => (
     <section id="three" className="wrapper alt style2">
       {/* ARTBREAK */}
       <section className="spotlight">
-        <video className="image" playsInLine loop muted autoPlay>
-          <source src={artbreakvid} type="video/mp4" poster={artbreakimg} />
+        <video className="image" loop muted autoPlay>
+          <source
+            src={artbreakvid}
+            type="video/mp4"
+            playsInLine
+            poster={artbreakimg}
+          />
           Your browser does not support the video tag.
         </video>
         <div className="content">
@@ -219,12 +224,8 @@ const IndexPage = () => (
       {/* Welcome Home */}
       <section className="spotlight">
         <video className="image" playsInLine loop muted autoPlay>
-          <source
-            src={welcomehomevid}
-            type="video/mp4"
-            poster={welcomehomeimg}
-          />
-          Your browser does not support the video tag.
+          src={welcomehomevid}
+          type="video/mp4"
         </video>
         <div className="content">
           <h2>
