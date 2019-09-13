@@ -223,9 +223,18 @@ const IndexPage = () => (
 
       {/* Welcome Home */}
       <section className="spotlight">
-        <video className="image" playsInLine loop muted autoPlay>
-          src={welcomehomevid}
-          type="video/mp4"
+        <video
+          className="image"
+          controls="false"
+          preload="auto"
+          playsInLine
+          loop
+          muted
+          autoPlay
+          poster={welcomehomeimg}
+        >
+          <source src={welcomehomevid} type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
         <div className="content">
           <h2>
